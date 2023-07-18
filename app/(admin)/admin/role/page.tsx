@@ -8,7 +8,7 @@ export default async function Page() {
             <Flex>
                 <div>
                     <Title>User Roles</Title>
-                    <Text>A list of roles retrieved from database.</Text>
+                    <Text className="hidden sm:block">A list of roles retrieved from database.</Text>
                 </div>
                 <div>
                     <AddBtn type="role"/>

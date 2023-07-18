@@ -2,7 +2,6 @@
 
 import {
     Grid,
-    Text,
     Card,
     Title,
 } from '@tremor/react';
@@ -12,15 +11,18 @@ import toast from 'react-hot-toast';
 // import Image from "next/image";
 import Currency from '@/components/ui/currency';
 import { Product } from '@/types'
+import { useRouter } from 'next/navigation';
 
 export default function ProductCard() {
     const [product, setProduct] = useState<Product[]>();
     const [loading, setLoading] = useState(true);
     const [tableBody, setTableBody] = useState<JSX.Element[]>();
 
+    const router = useRouter();
+
     function createRows() {
         const body = product?.map((i: Product) => (
-            <Card key={i.id} className="space-y-4">
+            <Card key={i.id} className="space-y-4" onClick={(e) => router.push(`/product/${i.id}`)}>
                 <div className="aspect-square rounded-xl bg-gray-100 relative">
                     {/* <Image 
                     src={i.image}

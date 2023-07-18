@@ -1,5 +1,5 @@
 import AllTable from '@/components/tables/all.user';
-import { Card, Title, Text } from '@tremor/react';
+import { Title, Text } from '@tremor/react';
 
 export default async function IndexPage() {
     return (

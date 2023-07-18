@@ -8,7 +8,7 @@ export default async function Page({ params }: { params: { id: string } }) {
             <Flex>
                 <div>
                     <Title>Edit Product</Title>
-                    <Text>Fill in the form below to edit a product.</Text>
+                    <Text className="hidden sm:block">Fill in the form below to edit a product.</Text>
                 </div>
                 <div>
                     <BackBtn type='product'/>

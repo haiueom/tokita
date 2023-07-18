@@ -8,7 +8,7 @@ export default async function Page() {
             <Flex>
                 <div>
                     <Title>Add New Role</Title>
-                    <Text>Fill in the form below to add a new role.</Text>
+                    <Text className="hidden sm:block">Fill in the form below to add a new role.</Text>
                 </div>
                 <div>
                     <BackBtn type="role"/>

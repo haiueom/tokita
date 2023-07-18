@@ -9,15 +9,17 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
 const navigation = [
-    { name: 'Dashboard', href: '/' },
-    { name: 'Playground', href: '/playground' },
+    { name: 'Product', href: '/admin/product' },
+    { name: 'User', href: '/admin/user' },
+    { name: 'Category', href: '/admin/category' },
+    { name: 'Role', href: '/admin/role' },
 ];
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ');
 }
 
-export default function Navbar({ user }: { user: any }) {
+export default function AdminNavbar({ user }: { user: any }) {
     const pathname = usePathname();
     const router = useRouter()
 

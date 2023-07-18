@@ -8,7 +8,7 @@ export default async function Page() {
             <Flex>
                 <div>
                     <Title>Admin Products</Title>
-                    <Text>A list of products retrieved from database.</Text>
+                    <Text className="hidden sm:block">A list of products retrieved from database.</Text>
                 </div>
                 <div>
                     <AddBtn type="product"/>

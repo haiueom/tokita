@@ -8,7 +8,7 @@ export default async function Page() {
             <Flex>
                 <div>
                     <Title>Product Categories</Title>
-                    <Text>A list of categories retrieved from database.</Text>
+                    <Text className="hidden sm:block">A list of categories retrieved from database.</Text>
                 </div>
                 <div>
                     <AddBtn type="category"/>

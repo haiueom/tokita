@@ -8,7 +8,7 @@ export default async function Page({ params }: { params: { id: string } }) {
             <Flex>
                 <div>
                     <Title>Category Detail</Title>
-                    <Text>Category detail retrieved from database.</Text>
+                    <Text className="hidden sm:block">Category detail retrieved from database.</Text>
                 </div>
                 <div>
                     <BackBtn type="category"/>

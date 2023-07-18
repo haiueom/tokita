@@ -8,7 +8,7 @@ export default async function Page() {
             <Flex>
                 <div>
                     <Title>Manage Users</Title>
-                    <Text>Admin page to manage users.</Text>
+                    <Text className="hidden sm:block">Admin page to manage users.</Text>
                 </div>
                 <div>
                     <AddBtn type="user"/>

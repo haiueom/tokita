@@ -8,7 +8,7 @@ export default async function Page() {
             <Flex>
                 <div>
                     <Title>Add New Category</Title>
-                    <Text>Fill in the form below to add a new category.</Text>
+                    <Text className="hidden sm:block">Fill in the form below to add a new category.</Text>
                 </div>
                 <div>
                     <BackBtn type="category"/>

@@ -8,7 +8,7 @@ export default async function AddProductPage() {
             <Flex>
                 <div>
                     <Title>Add User</Title>
-                    <Text>Fill in the form below to add a new user.</Text>
+                    <Text className="hidden sm:block">Fill in the form below to add a new user.</Text>
                 </div>
                 <div>
                     <BackBtn type="user" />

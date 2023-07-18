@@ -8,7 +8,7 @@ export default async function Page({ params }: { params: { id: string } }) {
             <Flex>
                 <div>
                     <Title>User Detail</Title>
-                    <Text>User detail retrieved from database.</Text>
+                    <Text className="hidden sm:block">User detail retrieved from database.</Text>
                 </div>
                 <div>
                     <BackBtn type='user' />
