@@ -10,6 +10,7 @@ import { useRouter } from 'next/navigation';
 
 const navigation = [
     { name: 'Home', href: '/' },
+    { name: 'Dashboard', href: '/admin'},
 ];
 
 function classNames(...classes: string[]) {

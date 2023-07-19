@@ -9,6 +9,8 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
 const navigation = [
+    { name: 'Home', href: '/'},
+    { name: 'Dashboard', href: '/admin'},
     { name: 'Product', href: '/admin/product' },
     { name: 'User', href: '/admin/user' },
     { name: 'Category', href: '/admin/category' },
