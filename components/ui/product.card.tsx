@@ -13,6 +13,8 @@ import Currency from '@/components/ui/currency';
 import { Product } from '@/types'
 import { useRouter } from 'next/navigation';
 
+
+
 export default function ProductCard() {
     const [product, setProduct] = useState<Product[]>();
     const [loading, setLoading] = useState(true);
@@ -52,7 +54,7 @@ export default function ProductCard() {
     useEffect(() => {
         async function fetchProducts() {
             try {
-                const res = await fetch('/api/product/featured');
+                const res = await fetch('/api/product/featured', { next: { revalidate: 10 } });
                 if (res.ok) {
                     setProduct(await res.json());
                     createRows();
